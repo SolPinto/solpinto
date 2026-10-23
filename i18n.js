@@ -4,7 +4,7 @@ window.I18N_EN = {
   'nav.perfil': 'Profile', 'nav.propuesta': 'Value', 'nav.trayectoria': 'Journey', 'nav.evidencias': 'Evidence', 'nav.contacto': 'Contact',
   'hero.kicker': 'Professional portfolio · Itauguá, Paraguay',
   'hero.role': 'Software Developer · Computer Science student, FPUNA',
-  'hero.quote': '“I build software the way a good craft is made: patiently, caring for every detail, and always a little beyond what is asked.”',
+  'hero.quote': '“Software in production, with proven quality in every release.”',
   'hero.cta1': 'See evidence', 'hero.cta2': 'Get in touch',
   'hero.f1': 'years in digital environments', 'hero.f2': 'people on the team I led technically', 'hero.f3': 'the average weekly output at Mercor',
   'perfil.title': 'Professional profile',
