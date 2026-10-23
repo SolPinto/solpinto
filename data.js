@@ -55,7 +55,7 @@ window.PROJECTS = [
     tone: 'sage',
     year: '2026',
     stack: ['Next.js 16', 'Prisma 7', 'PostgreSQL', 'NextAuth', 'Tailwind CSS'],
-    link: 'https://github.com/SolPinto',
+    link: 'https://agendapy.com.py/',
     es: {
       kicker: 'Proyecto personal',
       title: 'Agendapy',
@@ -79,9 +79,9 @@ window.PROJECTS = [
     tone: 'sage',
     year: '2026',
     stack: ['IA', 'Python'],
-    link: 'https://github.com/SolPinto',
+    //link: 'https://agendapy.com.py/',
     es: {
-      kicker: 'Proyecto personal',
+      kicker: 'Proyecto académico',
       title: 'Bot de estudio para la facultad',
       summary: 'Asistente que ayuda a repasar los temas de las materias de la carrera.',
       objetivo: 'Facilitar el estudio de los contenidos de la facultad con un asistente que responde y repasa temas de la materia.',
