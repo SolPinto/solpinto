@@ -1,16 +1,28 @@
-## Hi there 👋
+# Portafolio — Evelin Soledad Pinto
 
-<!--
-**SolPinto/solpinto** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Sitio estático: HTML + CSS + JavaScript + Three.js (por CDN). No requiere instalar nada.
 
-Here are some ideas to get you started:
+## Ver en tiempo real (VS Code)
+1. Abre la carpeta `portafolio/` en VS Code.
+2. Instala la extensión **Live Server** (Ritwick Dey).
+3. Clic derecho en `index.html` → **Open with Live Server**. Cada vez que guardes, el navegador se recarga.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+> Abrir `index.html` con doble clic no funciona bien: el módulo 3D necesita un servidor local.
+
+## Qué editar
+| Archivo | Contenido |
+|---|---|
+| `index.html` | Textos en español de todas las secciones |
+| `js/i18n.js` | Traducciones al inglés (misma clave `data-i18n`) |
+| `js/data.js` | Proyectos y evidencias (objetivo, participación, resultado, enlace) |
+| `css/organic.css` | Paleta, tipografías y radios (tokens del sistema Organic) |
+| `css/styles.css` | Diseño del sitio |
+| `js/scene.js` | Animación 3D (Three.js) |
+| `assets/foto.jpg` | Tu foto (créala; si no existe se muestra el monograma) |
+
+## Pendientes
+- Añadir la fecha de la pasantía en el CIT (`index.html`, comentario en la línea de la trayectoria).
+- Enlazar la evidencia real de cada proyecto en `js/data.js` (`link`): repositorio, certificado, fotos del evento.
+
+## Publicar gratis
+GitHub Pages: sube la carpeta a un repositorio → Settings → Pages → Branch `main` / root.
