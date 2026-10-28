@@ -18,11 +18,12 @@ Sitio estático: HTML + CSS + JavaScript + Three.js (por CDN). No requiere insta
 | `css/organic.css` | Paleta, tipografías y radios (tokens del sistema Organic) |
 | `css/styles.css` | Diseño del sitio |
 | `js/scene.js` | Animación 3D (Three.js) |
-| `assets/foto.jpg` | Tu foto (créala; si no existe se muestra el monograma) |
+| `assets/evidencias/` | Capturas del trabajo en Agenti, Co. y cartas de recomendación del CIT |
+| `assets/foto-perfil.jpeg` | Fotografía usada en la sección Perfil profesional |
 
 ## Pendientes
 - Añadir la fecha de la pasantía en el CIT (`index.html`, comentario en la línea de la trayectoria).
-- Enlazar la evidencia real de cada proyecto en `js/data.js` (`link`): repositorio, certificado, fotos del evento.
+- Agregar enlaces externos adicionales a cada proyecto en `js/data.js` (`link`) cuando estén disponibles.
 
 ## Publicar gratis
 GitHub Pages: sube la carpeta a un repositorio → Settings → Pages → Branch `main` / root.

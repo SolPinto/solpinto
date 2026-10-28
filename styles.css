@@ -136,6 +136,7 @@ body.menu-open .topbar { background: transparent; box-shadow: none; backdrop-fil
 .tl-item::before { content: ""; position: absolute; left: 162px; top: 6px; width: 20px; height: 20px; border-radius: 50%; background: var(--color-bg); box-shadow: inset 0 0 0 5px var(--color-accent); }
 .tl-item[data-type="edu"]::before { box-shadow: inset 0 0 0 5px var(--color-accent-2); }
 .tl-item.is-hidden { display: none; }
+.tl-list{margin:.5rem 0 0;padding-left:1.1rem;display:grid;gap:.3rem}
 .tl-date { font-weight: 700; font-size: 15px; color: var(--color-accent-700); text-align: right; padding-top: 2px; }
 .tl-body h3 { font-size: 24px; margin-bottom: 2px; }
 .tl-org { font-weight: 600; color: var(--color-accent-2-700); margin-bottom: var(--space-2); }

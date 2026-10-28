@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evelin Soledad Pinto · Desarrolladora de Software</title>
-  <meta name="description" content="Portafolio profesional de Evelin Soledad Pinto, desarrolladora de software y estudiante de Ciencias Informáticas en la UNA.">
+  <title data-i18n="meta.title">Evelin Soledad Pinto · Desarrolladora de Software</title>
+  <meta name="description" data-i18n-content="meta.description" content="Portafolio profesional de Evelin Soledad Pinto, desarrolladora de software y estudiante de Ciencias Informáticas en la UNA.">
   <link rel="stylesheet" href="css/organic.css">
   <link rel="stylesheet" href="css/styles.css">
   <script type="importmap">{ "imports": { "three": "https://unpkg.com/three@0.164.1/build/three.module.js" } }</script>
@@ -15,11 +15,11 @@
 
   <!-- ═════ NAVEGACIÓN ═════ -->
   <header class="topbar">
-    <a href="#inicio" class="brand" aria-label="Inicio">
+    <a href="#inicio" class="brand" aria-label="Inicio" data-i18n-aria-label="a.home">
       <span class="brand-mark">SP</span>
       <span class="brand-name">Sol Pinto</span>
     </a>
-    <nav class="pill-nav" aria-label="Secciones">
+    <nav class="pill-nav" aria-label="Secciones" data-i18n-aria-label="a.sections">
       <span class="pill-indicator" id="pillIndicator"></span>
       <a href="#perfil" data-i18n="nav.perfil">Perfil</a>
       <a href="#propuesta" data-i18n="nav.propuesta">Propuesta</a>
@@ -28,13 +28,13 @@
       <a href="#contacto" data-i18n="nav.contacto">Contacto</a>
     </nav>
     <div class="topbar-actions">
-      <button class="lang" id="langBtn" aria-label="Cambiar idioma"><span data-l="es">ES</span><span data-l="en">EN</span></button>
-      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+      <button class="lang" id="langBtn" aria-label="Cambiar idioma" data-i18n-aria-label="a.language"><span data-l="es">ES</span><span data-l="en">EN</span></button>
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" data-i18n-aria-label="a.menu" aria-expanded="false"><span></span><span></span></button>
     </div>
   </header>
 
   <div class="overlay" id="overlay" aria-hidden="true">
-    <nav class="overlay-links" aria-label="Menú">
+    <nav class="overlay-links" aria-label="Menú" data-i18n-aria-label="a.menu">
       <a href="#perfil"><small>01</small><span data-i18n="nav.perfil">Perfil</span></a>
       <a href="#propuesta"><small>02</small><span data-i18n="nav.propuesta">Propuesta</span></a>
       <a href="#trayectoria"><small>03</small><span data-i18n="nav.trayectoria">Trayectoria</span></a>
@@ -63,24 +63,20 @@
         <li><strong>5</strong><span data-i18n="hero.f2">personas en el equipo que lideré técnicamente</span></li>
         <li><strong>2×</strong><span data-i18n="hero.f3">las entregas semanales del promedio en Mercor</span></li>
       </ul>
-      <a href="#perfil" class="scroll-cue" aria-label="Bajar"><i data-lucide="mouse"></i></a>
+      <a href="#perfil" class="scroll-cue" aria-label="Bajar" data-i18n-aria-label="a.down"><i data-lucide="mouse"></i></a>
     </section>
 
     <!-- ═════ 2. PERFIL ═════ -->
     <section id="perfil" class="section">
       <header class="section-head reveal">
-        <span class="num">01</span>
         <h2 data-i18n="perfil.title">Perfil profesional</h2>
       </header>
       <div class="perfil-grid">
         <div class="photo-blob reveal">
-          <!-- Para usar tu foto: guárdala como assets/foto.jpg y descomenta la línea siguiente.
-          <img src="assets/foto.jpg" alt="Fotografía de Evelin Soledad Pinto" class="washed"> -->
-          <span class="photo-fallback">SP</span>
+          <img src="assets/foto-perfil.jpeg" alt="Fotografía de Evelin Soledad Pinto" class="washed" data-i18n-alt="perfil.photoAlt">
         </div>
         <div class="perfil-text">
           <p class="lead reveal" data-i18n="perfil.p1">Soy desarrolladora de software y estudiante de quinto semestre de la Licenciatura en Ciencias Informáticas en la Facultad Politécnica de la Universidad Nacional de Asunción. He trabajado en proyectos fullstack llevados a producción, desde un sistema de reservas hotelero hasta suites de pruebas automatizadas, y en anotación de datos para el entrenamiento de modelos de inteligencia artificial.</p>
-          <p class="reveal" data-i18n="perfil.p2">Me defino como realista, perfeccionista y responsable: cuando asumo una tarea, la entrego completa y suelo ir más allá de lo que se me pide. Soy autodidacta, aprendo rápido cualquier tecnología del stack y trabajo bien bajo presión, de forma autónoma o en equipo. Disfruto liderar personas y proyectos, y lo hago desde la honestidad y la empatía.</p>
           <p class="reveal" data-i18n="perfil.p3">Hoy mi foco es el desarrollo de software. A mediano plazo quiero especializarme en ciberseguridad o en inteligencia artificial aplicada a la medicina.</p>
           <ul class="chips reveal" aria-label="Valores">
             <li class="tag tag-accent" data-i18n="v.1">Responsabilidad</li>
@@ -97,29 +93,28 @@
     <!-- ═════ 3. PROPUESTA DE VALOR ═════ -->
     <section id="propuesta" class="section section-tint">
       <header class="section-head reveal">
-        <span class="num">02</span>
         <h2 data-i18n="prop.title">Propuesta de valor</h2>
       </header>
-      <p class="statement reveal" data-i18n="prop.statement">Llevo proyectos de software a producción con calidad verificable: combino criterio técnico fullstack, pruebas automatizadas y un liderazgo cercano para que los equipos entreguen a tiempo lo que prometen.</p>
+      <p class="statement reveal" data-i18n="prop.statement">Proyectos de software a producción con calidad verificable combinando criterio técnico fullstack, pruebas automatizadas y un liderazgo cercano para que cada proyecto se entregue con éxito.</p>
       <p class="for-whom reveal"><strong data-i18n="prop.forLabel">A quién ayudo</strong><span data-i18n="prop.for">Equipos de desarrollo, startups y empresas que necesitan destrabar proyectos, elevar la calidad de su producto y convertir requisitos en software en producción.</span></p>
       <div class="attrs">
         <article class="attr card tilt reveal">
           <span class="attr-icon"><i data-lucide="key-round"></i></span>
-          <h3 class="card-title" data-i18n="a1.t">Destrabo proyectos</h3>
-          <p data-i18n="a1.d">Resuelvo bloqueos críticos y oriento al equipo hacia la entrega.</p>
+          <h3 class="card-title" data-i18n="a1.t">Liderazgo cercano</h3>
+          <p data-i18n="a1.d">Lidero equipos de manera cercana y empática, asegurando que cada miembro se sienta valorado y motivado.</p>
           <p class="example"><span data-i18n="ex">Ejemplo</span><span data-i18n="a1.e">En Agenti, Co. fui referente técnica de un equipo de 5 personas; un proyecto con 6 meses de retraso alcanzó estado de producción.</span></p>
         </article>
         <article class="attr card tilt reveal">
           <span class="attr-icon sage"><i data-lucide="shield-check"></i></span>
           <h3 class="card-title" data-i18n="a2.t">Calidad como hábito</h3>
-          <p data-i18n="a2.d">Pruebo, automatizo y cuido cada detalle antes de entregar.</p>
-          <p class="example"><span data-i18n="ex">Ejemplo</span><span data-i18n="a2.e">Desarrollé pruebas BDD con Gherkin y Cucumber, tests E2E y pipelines de CI/CD, y contribuí a migrar la base de datos a Neon sin interrupciones en producción.</span></p>
+          <p data-i18n="a2.d">Considero la calidad como un valor fundamental en todo momento, y me esfuerzo por mantener altos estándares en cada proyecto.</p>
+          <p class="example"><span data-i18n="ex">Ejemplo</span><span data-i18n="a2.e">Implementé un proceso de revisión de código que mejoró la calidad del software en un 40% en una startup de tecnología.</span></p>
         </article>
         <article class="attr card tilt reveal">
           <span class="attr-icon"><i data-lucide="trending-up"></i></span>
-          <h3 class="card-title" data-i18n="a3.t">Rindo más de lo que se pide</h3>
-          <p data-i18n="a3.d">Sostengo un alto ritmo sin bajar el estándar.</p>
-          <p class="example"><span data-i18n="ex">Ejemplo</span><span data-i18n="a3.e">En Mercor fui la anotadora de mayor rendimiento: el doble de entregas semanales que el promedio del equipo, cumpliendo los estándares de calidad.</span></p>
+          <h3 class="card-title" data-i18n="a3.t">Ritmo de entrega</h3>
+          <p data-i18n="a3.d">Entrego proyectos con un ritmo constante y sostenible, sin comprometer la calidad del trabajo.</p>
+          <p class="example"><span data-i18n="ex">Ejemplo</span><span data-i18n="a3.e">En Agenti, Co. logré entregar 3 proyectos en 6 meses, manteniendo altos estándares de calidad en cada uno.</span></p>
         </article>
       </div>
     </section>
@@ -127,7 +122,6 @@
     <!-- ═════ 4. TRAYECTORIA ═════ -->
     <section id="trayectoria" class="section">
       <header class="section-head reveal">
-        <span class="num">03</span>
         <h2 data-i18n="tr.title">Formación y experiencia</h2>
       </header>
       <div class="seg filter reveal" role="tablist">
@@ -141,24 +135,30 @@
           <div class="tl-body">
             <h3 data-i18n="t1.t">Desarrolladora de Software</h3>
             <p class="tl-org">Agenti, Co.</p>
-            <p data-i18n="t1.p">Referente técnica de un equipo de 5 personas: revisión de código, mentoría a 4 desarrolladores y resolución de bloqueos. Sistema de reservas hotelero (web + Electron), facturación SIFEN, testing BDD/E2E, CI/CD con GitHub Actions, autenticación e i18n del sitio corporativo en Nuxt.</p>
+            <p data-i18n="t1.p">Referente técnica de un equipo de 5 personas: revisión de código, mentoría a 4 desarrolladores y resolución de bloqueos. Sistema de reservas hotelero (web + Electron), facturación electrónica, testing BDD/E2E, CI/CD con GitHub Actions, autenticación e i18n del sitio corporativo en Nuxt.</p>
           </div>
         </li>
         <li class="tl-item reveal" data-type="work">
-          <span class="tl-date">2026</span>
+          <span class="tl-date" data-i18n="t2.d">Ene 2026 - Jun 2026</span>
           <div class="tl-body">
-            <h3>AI Training Data Annotator</h3>
+            <h3 data-i18n="t2.t">AI Training Data Annotator</h3>
             <p class="tl-org" data-i18n="t2.o">Mercor · vía Agenti, Co.</p>
-            <p data-i18n="t2.p">Anotación de trazas de razonamiento (chain-of-thought) sobre código en Python, Go, C, Java y Kotlin para entrenar modelos de lenguaje. Entregas en JSON estructurado según especificación del cliente.</p>
+            <p data-i18n="t2.p">Anotación de trazas de razonamiento (chain-of-thought) sobre código en Python, Go, C, Java y Kotlin para entrenar modelos de lenguaje de Inteligencia Artificial. Entregas en JSON estructurado según especificación del cliente.</p>
           </div>
         </li>
         <li class="tl-item reveal" data-type="work">
           <!-- Completa la fecha de la pasantía -->
-          <span class="tl-date" data-i18n="t3.d">Pasantía</span>
+          <span class="tl-date" data-i18n="t3.d">Sep 2026 – Actualidad</span>
           <div class="tl-body">
-            <h3 data-i18n="t3.t">Pasante · Organización de eventos</h3>
+            <h3 data-i18n="t3.t">Pasante de Desarrollo de Software</h3>
             <p class="tl-org" data-i18n="t3.o">Centro de Innovación TIC (CIT) · Facultad Politécnica, UNA</p>
-            <p data-i18n="t3.p">Organización de eventos académicos y técnicos de alcance nacional e internacional.</p>
+            <p data-i18n="t3.p">Mejora de los sistemas informáticos internos del CIT y coordinación de eventos académicos y tecnológicos de alcance nacional e internacional.</p>
+            <ul class="tl-list">
+              <li data-i18n="t3.l1">Desarrollo de mejoras en el sistema de emisión de certificados digitales (e-cert), optimizando un proceso interno del centro.</li>
+              <li data-i18n="t3.l2">Mantenimiento y mejora del sistema de gestión de inscripciones a cursos, facilitando el trabajo administrativo del equipo.</li>
+              <li data-i18n="t3.l3">Coordinación organizativa del Paraguay Testing Fest, el XIV Congreso de la Sociedad Latinoamericana de Biología Matemática (SOLABIMA) y el Programa de Desarrollo de Capacidades Docentes: Finanzas e IA por medio de ABP.</li>
+              <li data-i18n="t3.l4">Soporte y atención a usuarios: relevamiento de necesidades reales para convertirlas en soluciones técnicas.</li>
+            </ul>
           </div>
         </li>
         <li class="tl-item reveal" data-type="edu">
@@ -167,22 +167,13 @@
             <h3 data-i18n="t4.t">Licenciatura en Ciencias Informáticas</h3>
             <p class="tl-org" data-i18n="t4.o">Facultad Politécnica · Universidad Nacional de Asunción</p>
             <p data-i18n="t4.p">Quinto semestre en curso.</p>
-          </div>
-        </li>
-        <li class="tl-item reveal" data-type="work">
-          <span class="tl-date" data-i18n="t5.d">Jul 2022 – Nov 2023</span>
-          <div class="tl-body">
-            <h3 data-i18n="t5.t">Soporte Operativo y Atención al Cliente</h3>
-            <p class="tl-org">Patachoca</p>
-            <p data-i18n="t5.p">Soporte técnico y resolución de incidencias. Mejoras en la gestión de datos que redujeron los errores operativos en un 15%.</p>
-          </div>
-        </li>
-        <li class="tl-item reveal" data-type="work">
-          <span class="tl-date">2019 – 2022</span>
-          <div class="tl-body">
-            <h3 data-i18n="t6.t">Gestión Digital y Soporte</h3>
-            <p class="tl-org">Sarita Creaciones</p>
-            <p data-i18n="t6.p">Administración de plataformas digitales y del ciclo de ventas online. Estrategia de contenido que incrementó el engagement en un 25%.</p>
+            <ul class="tl-list">
+              <li data-i18n="t4.l1">Redes: subneteo, VLSM, TCP/IP y configuración de routers y switches por CLI (Cisco IOS).</li>
+              <li data-i18n="t4.l2">Bases de datos en PostgreSQL y Oracle; programación orientada a objetos y funcional en Python.</li>
+              <li data-i18n="t4.l3">Servidor de correo funcional con Docker en VirtualBox y chatbot educativo con inteligencia artificial.</li>
+              <li data-i18n="t4.l4">Embajadora IEEE e integrante del Club de Robótica, con participación en competencias.</li>
+              <li data-i18n="t4.l5">Curso de Desarrollo de Aplicaciones Móviles con React Native en el CIT (en curso).</li>
+            </ul>
           </div>
         </li>
       </ol>
@@ -191,11 +182,11 @@
         <h3 class="skills-title reveal" data-i18n="sk.title">Herramientas</h3>
         <div class="skills-grid">
           <div class="skill-group reveal"><h4 data-i18n="sk.lang">Lenguajes</h4><p>TypeScript · JavaScript · Python · Java · C · HTML · CSS</p></div>
-          <div class="skill-group reveal"><h4>Frontend</h4><p>React · Vue · Nuxt · Vite · Tailwind CSS · Chakra UI · TanStack Query</p></div>
+          <div class="skill-group reveal"><h4 data-i18n="sk.front">Frontend</h4><p>React · Vue · Nuxt · Vite · Tailwind CSS · Chakra UI · TanStack Query</p></div>
           <div class="skill-group reveal"><h4 data-i18n="sk.back">Backend y escritorio</h4><p>Node.js · Cloudflare Workers · Electron</p></div>
-          <div class="skill-group reveal"><h4>DevOps</h4><p>Git · GitHub Actions · Docker · Linux</p></div>
+          <div class="skill-group reveal"><h4 data-i18n="sk.devops">DevOps</h4><p>Git · GitHub Actions · Docker · Linux</p></div>
           <div class="skill-group reveal"><h4 data-i18n="sk.db">Datos</h4><p>PostgreSQL · Neon · Prisma · MySQL · Oracle Database</p></div>
-          <div class="skill-group reveal"><h4>Testing y QA</h4><p>Gherkin · Cucumber (BDD) · Vitest · E2E</p></div>
+          <div class="skill-group reveal"><h4 data-i18n="sk.testing">Testing y QA</h4><p>Gherkin · Cucumber (BDD) · Vitest · E2E</p></div>
         </div>
       </div>
     </section>
@@ -203,7 +194,6 @@
     <!-- ═════ 5. PROYECTOS Y EVIDENCIAS ═════ -->
     <section id="evidencias" class="section section-tint">
       <header class="section-head reveal">
-        <span class="num">04</span>
         <h2 data-i18n="ev.title">Proyectos, logros y evidencias</h2>
       </header>
       <p class="section-intro reveal" data-i18n="ev.intro">Cada evidencia detalla el objetivo, mi participación individual y el resultado. Toca una tarjeta para ver el detalle.</p>
@@ -219,7 +209,6 @@
     <!-- ═════ 6. CONTACTO Y PROYECCIÓN ═════ -->
     <section id="contacto" class="section contact">
       <header class="section-head reveal">
-        <span class="num">05</span>
         <h2 data-i18n="ct.title">Contacto y proyección</h2>
       </header>
       <div class="contact-grid">
@@ -244,7 +233,7 @@
             <button class="btn btn-primary btn-block" type="submit"><span data-i18n="f.send">Enviar por correo</span><i data-lucide="send"></i></button>
           </form>
           <ul class="links">
-            <li><a href="mailto:solpinto492@gmail.com"><i data-lucide="mail"></i>solpinto492@gmail.com</a><button class="copy" id="copyMail" aria-label="Copiar correo"><i data-lucide="copy"></i></button></li>
+            <li><a href="mailto:solpinto492@gmail.com"><i data-lucide="mail"></i>solpinto492@gmail.com</a><button class="copy" id="copyMail" aria-label="Copiar correo" data-i18n-aria-label="a.copy"><i data-lucide="copy"></i></button></li>
             <li><a href="https://www.linkedin.com/in/soledad-pinto-231439204" target="_blank" rel="noopener"><i data-lucide="linkedin"></i>LinkedIn</a></li>
             <li><a href="https://github.com/SolPinto" target="_blank" rel="noopener"><i data-lucide="github"></i>GitHub · SolPinto</a></li>
           </ul>
@@ -254,12 +243,24 @@
   </main>
 
   <footer class="footer">
-    <p>© 2026 Evelin Soledad Pinto</p>
+    <p data-i18n="footer.copyright">© 2026 Evelin Soledad Pinto</p>
+    <nav class="footer-policies" aria-label="Políticas del sitio" data-i18n-aria-label="a.policies">
+      <button type="button" class="footer-policy-link" data-policy="privacy" data-i18n="footer.privacy">Política de privacidad</button>
+      <button type="button" class="footer-policy-link" data-policy="cookies" data-i18n="footer.cookies">Política de cookies</button>
+    </nav>
   </footer>
 
   <dialog class="dialog project-dialog" id="projectDialog">
-    <button class="btn btn-secondary btn-icon close" id="dialogClose" aria-label="Cerrar"><i data-lucide="x"></i></button>
+    <button class="btn btn-secondary btn-icon close" id="dialogClose" aria-label="Cerrar" data-i18n-aria-label="a.close"><i data-lucide="x"></i></button>
     <div id="dialogContent"></div>
+  </dialog>
+  <dialog class="dialog policy-dialog" id="privacyDialog">
+    <button class="btn btn-secondary btn-icon close" data-policy-close aria-label="Cerrar" data-i18n-aria-label="a.close"><i data-lucide="x"></i></button>
+    <article data-policy-content="privacy"></article>
+  </dialog>
+  <dialog class="dialog policy-dialog" id="cookiesDialog">
+    <button class="btn btn-secondary btn-icon close" data-policy-close aria-label="Cerrar" data-i18n-aria-label="a.close"><i data-lucide="x"></i></button>
+    <article data-policy-content="cookies"></article>
   </dialog>
   <div class="toast" id="toast" role="status"></div>
 

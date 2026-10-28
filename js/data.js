@@ -8,6 +8,18 @@ window.PROJECTS = [
     year: '2026',
     stack: ['TypeScript', 'React', 'Electron', 'Prisma', 'Neon', 'Cucumber', 'GitHub Actions'],
     link: null,
+    evidence: [
+      {
+        src: 'assets/evidencias/agenti-web.png',
+        es: 'Sitio web del sistema de reservas hotelero en producción',
+        en: 'Production hotel booking system website'
+      },
+      {
+        src: 'assets/evidencias/agenti-electron.png',
+        es: 'Panel de gestión de estacionamiento de la aplicación de escritorio',
+        en: 'Parking management panel from the desktop application'
+      }
+    ],
     es: {
       kicker: 'Proyecto laboral · Agenti, Co.',
       title: 'Sistema de reservas hotelero',
@@ -31,7 +43,20 @@ window.PROJECTS = [
     tone: 'accent',
     year: 'CIT · FPUNA',
     stack: ['Organización', 'Logística', 'Comunicación'],
+    stackEn: ['Organization', 'Logistics', 'Communication'],
     link: null,
+    evidence: [
+      {
+        src: 'assets/evidencias/cit-recomendacion-1.jpeg',
+        es: 'Carta de recomendación del gerente de campo del CIT',
+        en: 'Recommendation letter from the CIT Field Manager'
+      },
+      {
+        src: 'assets/evidencias/cit-recomendacion-2.jpeg',
+        es: 'Carta de recomendación del director del CIT',
+        en: 'Recommendation letter from the CIT Director'
+      }
+    ],
     es: {
       kicker: 'Pasantía · CIT, Facultad Politécnica',
       title: 'Organización de eventos académicos',
@@ -79,6 +104,7 @@ window.PROJECTS = [
     tone: 'sage',
     year: '2026',
     stack: ['IA', 'Python'],
+    stackEn: ['AI', 'Python'],
     //link: 'https://github.com/SolPinto',
     es: {
       kicker: 'Proyecto académico',
