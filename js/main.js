@@ -4,6 +4,7 @@
   let lang = localStorage.getItem('portfolio-lang') || 'es';
   const t = (k) => (lang === 'en' ? I18N_EN : I18N_ES_JS)[k] || k;
   const icons = () => window.lucide && lucide.createIcons({ attrs: { 'stroke-width': 2.75 } });
+  $$('dialog[open]').forEach((dialog) => dialog.close());
   const policyContent = {
     privacy: {
       es: `<h3>${I18N_ES_JS['privacy.title']}</h3><p><strong>Última actualización:</strong> 28 de octubre de 2026</p><p>Esta política explica qué información se trata cuando visitas el portafolio de Evelin Soledad Pinto.</p><h4>Información que se recopila</h4><p>Este sitio no tiene cuentas de usuario, base de datos propia, analítica ni publicidad. La preferencia de idioma se guarda únicamente en el almacenamiento local de tu navegador. Si eliges enviar un mensaje, se abre tu aplicación de correo mediante un enlace <em>mailto:</em>; el sitio no recibe ni almacena ese mensaje.</p><h4>Servicios externos</h4><p>El sitio carga recursos desde servicios externos como unpkg (Lucide y Three.js). Esos servicios pueden recibir datos técnicos básicos de la conexión, como la dirección IP, conforme a sus propias políticas.</p><h4>Contacto</h4><p>Para consultas sobre privacidad, escribe a <a href="mailto:solpinto492@gmail.com">solpinto492@gmail.com</a>.</p>`,

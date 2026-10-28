@@ -2,6 +2,7 @@
    vienen de organic.css — cambia allí la paleta y todo el sitio se actualiza. */
 
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+dialog:not([open]) { display: none !important; }
 body { font-size: 17px; line-height: 1.6; overflow-x: hidden; }
 body.menu-open { overflow: hidden; }
 a { color: var(--color-accent-700); }
